@@ -1,3 +1,5 @@
+set t_Co=256
+
 " Sets line number
 set number relativenumber
 " Sets mouse scrolling through the vim file
@@ -27,7 +29,7 @@ nnoremap <C-n> :NERDTree<CR>
 " TagbarToggle (Open/Close)
 nmap <F7> :TagbarToggle<CR>
 " Vim-plug
-call plug#begin()
+call plug#begin('C:\Users\anato\AppData\Local\nvim-data\autoload')
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'dense-analysis/ale'
@@ -35,7 +37,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'preservim/tagbar'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
+
+colorscheme dracula
 
 " Airline settings
 let g:airline_powerline_fonts = 1
