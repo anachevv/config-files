@@ -29,7 +29,7 @@ nnoremap <C-n> :NERDTree<CR>
 " TagbarToggle (Open/Close)
 nmap <F7> :TagbarToggle<CR>
 " Vim-plug
-call plug#begin('C:\Users\anato\AppData\Local\nvim-data\autoload')
+call plug#begin()
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'dense-analysis/ale'
