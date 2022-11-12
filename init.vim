@@ -37,10 +37,19 @@ Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'preservim/tagbar'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'navarasu/onedark.nvim'
 call plug#end()
 
-colorscheme dracula
+let g:onedark_config = {
+  \ 'style': 'deep',
+  \ 'toggle_style_key': '<leader>ts',
+  \ 'ending_tildes': v:true,
+  \ 'diagnostics': {
+    \ 'darker': v:false,
+    \ 'background': v:false,
+  \ },
+\ }
+colorscheme onedark
 
 " Airline settings
 let g:airline_powerline_fonts = 1
@@ -57,4 +66,3 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
-
